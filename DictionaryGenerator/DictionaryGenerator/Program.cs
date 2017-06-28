@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DictionaryGenerator
+﻿namespace DictionaryGenerator
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //var generator = new NameDictionaryGenerator(@"D:\Perso\Dropbox\Apps\JohnTheRipper\prenoms.lst");
             //generator.Generate(@"C:\Temp\JohnTheRipper\NamesDictionary.lst");
@@ -17,7 +11,7 @@ namespace DictionaryGenerator
             //generator.Generate(@"C:\Temp\JohnTheRipper\NumbersDictionary.lst");
 
             var generator = new SmallWordsDictionaryGenerator();
-            generator.Generate(@"C:\Temp\JohnTheRipper\SmallWordsDictionary.lst");
+            generator.Generate(5, @"C:\Temp\JohnTheRipper\SimpleWordsNumbersDictionary.lst", true, false, true, false);
         }
     }
 }
